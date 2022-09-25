@@ -1,0 +1,23 @@
+# Whonix Shell
+
+Mostly to beautify and make it easier to use with colors and autocompletion.
+
+## bash
+
+Bash has pretty limited features, altough it is faster to load then bash, but
+it does not impact performance overall.
+
+Bash is drastically loosing to zsh on completion terms and many others.
+
+## zsh
+
+Was made first by compinstall then further developed by the templates shown
+in the credits.
+
+Some othe custom vi keybinding for faster editing on the cli.
+
+## aliasrc and shrc
+
+Standard shell commands and aliases that could be sourced by any shell, bash,
+zsh etc
+
