@@ -16,6 +16,11 @@ in the credits.
 
 Some othe custom vi keybinding for faster editing on the cli.
 
+Please download the following packages:
+```sh
+zsh zsh-autosuggestions zsh-syntax-hightlighting
+```
+
 ## aliasrc and shrc
 
 Standard shell commands and aliases that could be sourced by any shell, bash,
