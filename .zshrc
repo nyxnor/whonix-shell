@@ -28,13 +28,13 @@ _git_prompt_info() {
     *-88color|rxvt-unicode) branchcolor=$'\e[38;5;22m'   ;;  
     *)                      branchcolor=$'\e[00;94m'     ;;  
   esac
-print -Pn '(%%{$branchcolor%%}%20>…>$ref%<<%%{\e[00m%%})'
+print -Pn '(%%{$branchcolor%%}%20>...>$ref%<<%%{\e[00m%%})'
 }
 
 _get_dist_prompt() {
   test -z "${dist_prompt}" && return
   dist_prompt_color=$'\e[00;35m'
-  print -Pn '%%{\e[00m%%}%%{$dist_prompt_color%%}%20>…>$dist_prompt%<<%%{\e[00m%%} '
+  print -Pn '%%{\e[00m%%}%%{$dist_prompt_color%%}%20>...>$dist_prompt%<<%%{\e[00m%%} '
 }
 
 local usercolor=$'\e[00;93m'
@@ -56,7 +56,7 @@ reset_color=$'\e[00m'
 ## user prompt
 PROMPT="%{$fg[red]%}[\$(_get_dist_prompt)%{$usercolor%}%n%{$reset_color%}%{$reset_color%} %{$dircolor%}%~%{$reset_color%}%{$fg[red]%}]%{$reset_color%}%# "
 ## developer prompt
-#PROMPT="%{$fg[red]%}[\$(_get_dist_prompt)%{$usercolor%}%n%{$reset_color%}%{$reset_color%} %{$dircolor%}%30<…<%~%<<%{$reset_color%}\$(_git_prompt_info)%{$fg[red]%}]%{$reset_color%}%# "
+#PROMPT="%{$fg[red]%}[\$(_get_dist_prompt)%{$usercolor%}%n%{$reset_color%}%{$reset_color%} %{$dircolor%}%30<...<%~%<<%{$reset_color%}\$(_git_prompt_info)%{$fg[red]%}]%{$reset_color%}%# "
 ## print previous command exit code 
 #RPS1="%(?..(%{"$'\e[01;35m'"%}%?%{$reset_color%}%)%<<)"
 
